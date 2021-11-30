@@ -1,0 +1,11 @@
+C:\Users\Nember\source\repos\Tetris_Efremov_Semenova\Tetris_Efremov_Semenova\obj\Debug\Tetris_Efremov_Semenova.csproj.AssemblyReference.cache
+C:\Users\Nember\source\repos\Tetris_Efremov_Semenova\Tetris_Efremov_Semenova\obj\Debug\Tetris_Efremov_Semenova.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nember\source\repos\Tetris_Efremov_Semenova\Tetris_Efremov_Semenova\obj\Debug\Tetris_Efremov_Semenova.Properties.Resources.resources
+C:\Users\Nember\source\repos\Tetris_Efremov_Semenova\Tetris_Efremov_Semenova\obj\Debug\Tetris_Efremov_Semenova.csproj.GenerateResource.cache
+C:\Users\Nember\source\repos\Tetris_Efremov_Semenova\Tetris_Efremov_Semenova\obj\Debug\Tetris_Efremov_Semenova.csproj.CoreCompileInputs.cache
+C:\Users\Nember\source\repos\Tetris_Efremov_Semenova\Tetris_Efremov_Semenova\bin\Debug\Tetris_Efremov_Semenova.exe.config
+C:\Users\Nember\source\repos\Tetris_Efremov_Semenova\Tetris_Efremov_Semenova\bin\Debug\Tetris_Efremov_Semenova.exe
+C:\Users\Nember\source\repos\Tetris_Efremov_Semenova\Tetris_Efremov_Semenova\bin\Debug\Tetris_Efremov_Semenova.pdb
+C:\Users\Nember\source\repos\Tetris_Efremov_Semenova\Tetris_Efremov_Semenova\obj\Debug\Tetris_Efremov_Semenova.Form1.resources
+C:\Users\Nember\source\repos\Tetris_Efremov_Semenova\Tetris_Efremov_Semenova\obj\Debug\Tetris_Efremov_Semenova.exe
+C:\Users\Nember\source\repos\Tetris_Efremov_Semenova\Tetris_Efremov_Semenova\obj\Debug\Tetris_Efremov_Semenova.pdb
