@@ -16,7 +16,8 @@ namespace Tetris_Efremov_Semenova
         int size;
         int[,] map = new int[16, 8];
         int linesRemoved;
-        int score;
+        public int record;
+        public int score;
         int Interval;
         public Form1()
         {
@@ -30,13 +31,12 @@ namespace Tetris_Efremov_Semenova
             size = 25;
             score = 0;
             linesRemoved = 0;
+            record = 0;
             currentShape = new Shape(3, 0);
             Interval = 300;
 
             label1.Text = "Score: " + score;
             label2.Text = "Lines: " + linesRemoved;
-
-
 
             timer1.Interval = Interval;
             timer1.Tick += new EventHandler(update);
@@ -59,7 +59,7 @@ namespace Tetris_Efremov_Semenova
                     }
                     break;
                 case Keys.Space:
-                    timer1.Interval = 10;
+                    timer1.Interval = 50;
                     break;
                 case Keys.Right:
                     if (!CollideHor(1))
@@ -94,7 +94,7 @@ namespace Tetris_Efremov_Semenova
                     }
                     if (currentShape.nextmatrix[i, j] == 2)
                     {
-                        g.FillRectangle(Brushes.Yellow, new Rectangle(300 + j * (size) + 1, 50 + i * (size) + 1, size - 1, size - 1));
+                        g.FillRectangle(Brushes.Orange, new Rectangle(300 + j * (size) + 1, 50 + i * (size) + 1, size - 1, size - 1));
                     }
                     if (currentShape.nextmatrix[i, j] == 3)
                     {
@@ -136,7 +136,15 @@ namespace Tetris_Efremov_Semenova
                     }
                     timer1.Tick -= new EventHandler(update);
                     timer1.Stop();
-                    Init();
+                    this.Hide();
+                    Form2 newForm = new Form2();
+                    newForm.Hide();
+                    newForm.Txt = label1.Text;
+                    while (newForm != null) 
+                    {
+                        newForm.Show();
+                        break;
+                    }
                 }
             }
             Merge();
@@ -287,7 +295,7 @@ namespace Tetris_Efremov_Semenova
                     }
                     if (map[i, j] == 2)
                     {
-                        e.FillRectangle(Brushes.Yellow, new Rectangle(50 + j * (size) + 1, 50 + i * (size) + 1, size - 1, size - 1));
+                        e.FillRectangle(Brushes.Orange, new Rectangle(50 + j * (size) + 1, 50 + i * (size) + 1, size - 1, size - 1));
                     }
                     if (map[i, j] == 3)
                     {
@@ -310,11 +318,11 @@ namespace Tetris_Efremov_Semenova
         {
             for (int i = 0; i <= 16; i++)
             {
-                g.DrawLine(Pens.Black, new Point(50, 50 + i * size), new Point(50 + 8 * size, 50 + i * size));
+                g.DrawLine(Pens.White, new Point(50, 50 + i * size), new Point(50 + 8 * size, 50 + i * size));
             }
             for (int i = 0; i <= 8; i++)
             {
-                g.DrawLine(Pens.Black, new Point(50 + i * size, 50), new Point(50 + i * size, 50 + 16 * size));
+                g.DrawLine(Pens.White, new Point(50 + i * size, 50), new Point(50 + i * size, 50 + 16 * size));
             }
         }
 
